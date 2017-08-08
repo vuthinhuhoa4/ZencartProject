@@ -15,8 +15,8 @@
  * HTTP_SERVER is your Main webserver: eg-http://www.yourdomain.com
  * HTTPS_SERVER is your Secure/SSL webserver: eg-https://www.yourdomain.com
  */
-define('HTTP_SERVER', 'http://localhost:81');
-define('HTTPS_SERVER', 'https://localhost:81');
+define('HTTP_SERVER', 'http://localhost');
+define('HTTPS_SERVER', 'https://localhost');
 
 /**
  *  If you want to tell Zen Cart to use your HTTPS URL on sensitive pages like login and checkout, set this to 'true'. Otherwise 'false'. (Keep the quotes)
