@@ -16,10 +16,11 @@
   // Use as many or as few lines using this model as you need for your custom content.
   // If you have a multilingual site define your text in the languages/YOUR_LANGUAGE/extra_definitions/blank_sidebox_defines.php and include it as shown in line 19.
   // If your site is monolingual, you can put the text right here as shown on line 20 (and nobody will know!)
-  $content .= '<p align="center">Yahoo</p><br />
-<a href="ymsgr:SendIM?haisieuquaytaixuat"><img src="http://mail.opi.yahoo.com/online?u=haisieuquaytaixuat&m=g&t=2"/></a><br />
-<p align="center">Skype</p><br />
-<a href="skype:haisieuquaytaixuat?chat"><img src="images/skype.png" alt=""></a>';
+  $content .= '
+<div style="text-align:center">
+  <a href="skype:haisieuquaytaixuat?chat"><img src="images/skype.png" alt=""></a>
+</div>​
+';
 
   $content .= '</div>';
 ?>

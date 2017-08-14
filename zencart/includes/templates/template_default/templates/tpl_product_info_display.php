@@ -85,6 +85,20 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 <!--eof Product description -->
 <br class="clearBoth" />
 
+<!-- <iframe src="https://www.facebook.com/plugins/like.php?href=
+
+http://localhost/zencart/index.php?main_page=product_info&cPath=1&products_id=1
+
+%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
+
+echo HELl
+
+<iframe src="https://www.facebook.com/plugins/share_button.php?href=
+
+ <?php echo (zen_href_link(zen_get_info_page((int)$_GET['products_id']),'&cPath='.(int)$_GET['cPath'].'&products_id=' . (int)$_GET['products_id'])); ?>
+
+%2F&layout=button_count&size=small&mobile_iframe=true&width=110&height=20&appId" width="110" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
 <!--bof Add to Cart Box -->
 <?php
 if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == '') {
@@ -189,6 +203,20 @@ if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == 
 ?>
 <!--eof Reviews button and count -->
 
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-comments" data-width="100%" data-href="
+
+<?php echo (zen_href_link(zen_get_info_page((int)$_GET['products_id']),'&cPath='.(int)$_GET['cPath'].'&products_id=' . (int)$_GET['products_id'])); ?>
+
+/comments#configurator" data-numposts="1"></div>
 
 <!--bof Product date added/available-->
 <?php
