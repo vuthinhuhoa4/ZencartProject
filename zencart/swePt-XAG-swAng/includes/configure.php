@@ -14,7 +14,7 @@
 /**
  * Enter the domain for your Admin URL. If you have SSL, enter the correct https address in the HTTP_SERVER setting, instead of just an http address.
  */
-define('HTTP_SERVER', 'http://localhost');
+define('HTTP_SERVER', 'http://localhost:81');
 /**
  * Note about HTTPS_SERVER:
  * There is no longer an HTTPS_SERVER setting for the Admin. Instead, put your SSL URL in the HTTP_SERVER setting above.
@@ -30,8 +30,8 @@ define('HTTP_SERVER', 'http://localhost');
  * Enter the domain for your storefront URL.
  * Enter a separate SSL URL in HTTPS_CATALOG_SERVER if your store supports SSL.
  */
-define('HTTP_CATALOG_SERVER', 'http://localhost');
-define('HTTPS_CATALOG_SERVER', 'https://localhost');
+define('HTTP_CATALOG_SERVER', 'http://localhost:81');
+define('HTTPS_CATALOG_SERVER', 'https://localhost:81');
 
 /**
  * Do you use SSL for your customers login/checkout on the storefront? If so, enter 'true'. Else 'false'.
