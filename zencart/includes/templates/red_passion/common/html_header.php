@@ -30,16 +30,9 @@ require(DIR_WS_MODULES . zen_get_module_directory('meta_tags.php'));
 <meta name="generator" content="shopping cart program by Zen Cart&trade;, http://www.zen-cart.com" />
 <?php if (defined('ROBOTS_PAGES_TO_SKIP') && in_array($current_page_base,explode(",",constant('ROBOTS_PAGES_TO_SKIP'))) || $current_page_base=='down_for_maintenance') { ?>
 <meta name="robots" content="noindex, nofollow" />
-<meta name="description" content="愛犬を探してほしい飼い主さんや、迷子犬を保護した方の情報交換の場です。
-1日でも早く飼い主さんのもとに帰れるように、皆さんのご協力をお願いします。">
-    <meta property="og:title" content="愛犬と楽しむ温泉旅館　絆-きずな-｜愛犬ポータル・ワンダホー" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://54.65.45.160/facility/mypage" />
-  <meta property="og:image" content="http://54.65.45.160/uploads/8.jpg" />
-  <meta property="og:site_name" content="ワンダホー" />
-  <meta property="og:description" content="" />    <!-- Facebook用設定 -->
-    <meta property="fb:app_id" content="1636671226641380" />
-    <meta property="article:publisher" content="211447215981951" /> 
+
+
+
 <?php } ?>
 <?php if (defined('FAVICON')) { ?>
 <link rel="icon" href="<?php echo FAVICON; ?>" type="image/x-icon" />

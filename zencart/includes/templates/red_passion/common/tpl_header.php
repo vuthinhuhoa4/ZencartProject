@@ -68,6 +68,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
 
 <!--bof-navigation display-->
 <div id="navMainWrapper">
+
 <div id="navMain">
     <ul class="back">
     <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><?php echo HEADER_TITLE_CATALOG; ?></a></li>
